@@ -14,16 +14,17 @@ html, body {
 /*Header*/
 
 header {
+  display: flex;
   width: 100%;
   background: #131317;
   border-bottom: 2px solid white;
   overflow: hidden;
   padding-right: 10px;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .header-item {
-  float: left;
   text-align: center;
   padding: 15px 10px;
   margin: 0;
@@ -32,6 +33,9 @@ header {
   text-decoration: none;
   color: white;
   transition: 0.1s;
+  letter-spacing: 5px;
+  font-family: Sen, Lato, Arial, Helvetica, sans-serif;
+  font-size: 32px;
 }
 
 .header-item.logo {
@@ -41,12 +45,6 @@ header {
 .header-item:hover {
   background-color: var(--accent-color);
   filter: drop-shadow(0 0 5px var(--accent-color))
-}
-
-.header-item h1 {
-    letter-spacing: 5px;
-    font-family: Sen, Lato, Arial, Helvetica, sans-serif;
-    margin: 0;
 }
 
 /*Body*/
